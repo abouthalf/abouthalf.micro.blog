@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'Antic Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Antic Slab Regular'), local('AnticSlab-Regular'), url(https://fonts.gstatic.com/s/anticslab/v6/bWt97fPFfRzkCa9Jlp6IacVcWQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Libre Franklin Italic'), local('LibreFranklin-Italic'), url(https://fonts.gstatic.com/s/librefranklin/v2/jizBREVItHgc8qDIbSTKq4XkRiUa6zUTiw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Franklin'), local('LibreFranklin-Regular'), url(https://fonts.gstatic.com/s/librefranklin/v2/jizDREVItHgc8qDIbSTKq4XkRiUf2zI.ttf) format('truetype');
+}
+.serif {
+  font-family: 'Antic Slab', serif;
+  letter-spacing: 0.0625rem;
+}
+/* universal margin-bottom */
+.universalMarginBottom {
+  margin-top: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dd,
+p,
+figure,
+pre,
+table,
+fieldset,
+hr,
+form,
+img,
+.u-url {
+  margin-top: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+ul ul {
+  margin-bottom: 0;
+}
+img {
+  display: block;
+  margin: 1rem auto;
+}
+/* font -sizes */
+.small {
+  font-size: 14px;
+  font-size: 0.875rem;
+  /* 14px */
+  line-height: 1.714;
+  /* 24px */
+}
+small {
+  font-size: 14px;
+  font-size: 0.875rem;
+  /* 14px */
+  line-height: 1.714;
+  /* 24px */
+}
+h1,
+.header {
+  font-size: 48px;
+  font-size: 3rem;
+  /* 48px */
+  line-height: 1;
+  /* 48px */
+}
+h2,
+.sub-header {
+  font-size: 32px;
+  font-size: 2rem;
+  /* 32px */
+  line-height: 1.5;
+  /* 48px */
+}
+.big {
+  font-size: 24px;
+  font-size: 1.5rem;
+  /* 24px */
+  line-height: 1;
+  /* 24x */
+}
+h3,
+big {
+  font-size: 24px;
+  font-size: 1.5rem;
+  /* 24px */
+  line-height: 1;
+  /* 24x */
+}
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+html,
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #444;
+}
+blockquote {
+  font-family: 'Antic Slab', serif;
+  letter-spacing: 0.0625rem;
+  border: none;
+  margin-left: 3rem;
+}
+blockquote a,
+blockquote a:visited,
+blockquote a:hover {
+  color: inherit;
+}
+a {
+  color: #369;
+}
+a:hover {
+  text-decoration: none;
+  border: none;
+  color: #369;
+}
+em {
+  font-family: 'Antic Slab', serif;
+  letter-spacing: 0.0625rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Antic Slab', serif;
+  letter-spacing: 0.0625rem;
+  font-weight: normal;
+  color: #666;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: inherit;
+}
+.site-header {
+  border-top: 1rem solid #f60;
+  border-bottom: none;
+}
+.site-header .wrapper .site-title {
+  color: #bbb;
+}
+.site-header .wrapper .site-title:hover {
+  text-decoration: none;
+  border: none;
+  color: #bbb;
+}
+.site-header .site-nav a {
+  color: #666;
+  text-transform: lowercase;
+}
+.u-url {
+  margin-top: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+.post-meta {
+  font-size: 14px;
+  font-size: 0.875rem;
+  /* 14px */
+  line-height: 1.714;
+  /* 24px */
+  font-family: 'Antic Slab', serif;
+  letter-spacing: 0.0625rem;
+  color: #666;
+}
+/** Layout **/
+.wrapper {
+  max-width: 48rem;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+.post-list > li.h-entry {
+  margin-bottom: 9rem;
+}
+footer.site-footer {
+  color: white;
+  background-color: #369;
+  background-size: 69px 50px;
+  background-position-x: center;
+  background-position-y: calc(100% - 1rem);
+  background-repeat: no-repeat;
+  background-image: url('http://abouthalf.micro.blog/uploads/2018/9e19e4485e.jpg');
+  padding: 1rem;
+}
+footer.site-footer a {
+  color: inherit;
+}
+footer.site-footer .wrapper {
+  padding: 0;
+  margin: 0 auto;
+  min-height: 6rem;
+}
+.footer-col-wrapper {
+  color: inherit;
+}
+.site-nav {
+  border: none;
+  line-height: 1;
+}
+.site-nav * {
+  line-height: 1;
+  min-height: auto;
+}
+@media screen and (min-width: 48rem) {
+  .wrapper {
+    padding: 0;
+  }
+  .site-header * {
+    line-height: 5rem;
+    min-height: 5rem;
+  }
+}

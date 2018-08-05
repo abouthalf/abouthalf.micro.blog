@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Antic+Slab|Libre+Franklin:400,400i');
+
+@highlight: #f60;
+@accent: #369;
+@body: #444;
+@light: #666;
+
+
+.sans() {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.serif {
+    font-family: 'Antic Slab', serif;
+    letter-spacing: 0.0625rem;
+}
+
+/* universal margin-bottom */
+.universalMarginBottom
+{
+	margin-top: 0;
+	margin-bottom: 24px;
+	margin-bottom:1.5rem;
+}
+
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr,form, img, .u-url
+{
+	.universalMarginBottom;
+}
+
+ul ul {margin-bottom: 0;}
+
+img {
+    display: block;
+    margin: 1rem auto;
+}
+
+/* font -sizes */
+
+.small
+{
+	font-size: 14px;
+	font-size: 0.875rem; /* 14px */
+	line-height: 1.714; /* 24px */
+}
+
+small
+{
+	.small;
+}
+
+h1, .header
+{
+	font-size: 48px;
+	font-size: 3rem; /* 48px */
+	line-height: 1; /* 48px */
+}
+
+h2, .sub-header
+{
+	font-size: 32px;
+	font-size: 2rem; /* 32px */
+	line-height: 1.5; /* 48px */
+}
+
+.big
+{
+	font-size: 24px;
+	font-size: 1.5rem; /* 24px */
+	line-height: 1; /* 24x */
+}
+
+h3, big
+{
+	.big;
+}
+
+h4, h5, h6
+{
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+html, body {
+    .sans();
+    font-size: 100%;
+    line-height: 1.5;
+    color: @body;
+}
+
+blockquote {
+    .serif;
+    border: none;
+    margin-left: 3rem;
+
+    a,
+    a:visited,
+    a:hover {
+        color: inherit;
+    }
+}
+
+a {
+    color: @accent;
+
+    &:hover {
+        text-decoration: none;
+        border: none;
+        color: @accent;
+    }
+}
+
+em {
+    .serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    .serif;
+    font-weight: normal;
+    
+    color: @light;
+
+    a {
+        color: inherit;
+
+        &:hover,
+        &:visited {
+            color: inherit;
+        }
+    }
+}
+
+
+
+
+.site-header {
+    border-top: 1rem solid @highlight;
+    border-bottom: none;
+
+    .wrapper {
+        .site-title {
+            color: #bbb;
+            &:hover {
+                
+                text-decoration: none;
+                border: none;
+                color: #bbb;
+            }
+        }
+    }
+
+    .site-nav a {
+        color: @light;
+        text-transform: lowercase;
+    }
+}
+
+
+.u-url {
+    .universalMarginBottom;
+    display: inline-block;
+}
+.post-meta {
+    .small;
+    .serif;
+    color: @light;
+}
+
+/** Layout **/
+
+.wrapper {
+    max-width: 48rem;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+.post-list > li.h-entry {
+    margin-bottom: 9rem;
+}
+
+footer.site-footer {
+    color: white;
+    background-color: @accent;
+    background-size: 69px 50px;
+    background-position-x: center;
+    background-position-y: calc( 100% - 1rem );
+    background-repeat: no-repeat;
+    background-image: url('http://abouthalf.micro.blog/uploads/2018/9e19e4485e.jpg');
+    padding: 1rem;
+
+    a {color: inherit;}
+
+    .wrapper {
+        padding: 0;
+        margin: 0 auto;
+
+        min-height: 6rem;
+    }
+}
+
+.footer-col-wrapper {
+    color: inherit;
+}
+
+.site-nav {
+    border: none;
+    line-height: 1;
+
+    * {
+        line-height: 1;
+        min-height: auto;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .wrapper {
+        padding: 0;
+    }
+
+    .site-header * {
+        line-height: 5rem;
+        min-height: 5rem;
+    }
+}

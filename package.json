@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "lessc src/custom.less build/custom.css",
+    "serve": "serve"
   },
   "author": "",
   "license": "ISC",
